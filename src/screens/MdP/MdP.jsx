@@ -8,10 +8,10 @@ export const MdP = () => {
     <div className="w-full flex flex-row justify-center bg-white">
       <div
         className={`bg-white relative ${
-          screenWidth < 428
-            ? "w-[393px]"
-            : screenWidth >= 428 && screenWidth < 1360
-            ? "w-[428px]"
+          screenWidth < 433
+            ? "w-[395px]"
+            : screenWidth >= 433 && screenWidth < 1360
+            ? "w-[433px]"
             : screenWidth >= 1360 && screenWidth < 1512
             ? "w-[1360px]"
             : screenWidth >= 1512 && screenWidth < 1728
@@ -20,7 +20,7 @@ export const MdP = () => {
             ? "w-[1728px]"
             : ""
         } ${
-          (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+          (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
             ? "h-[3620px]"
             : (screenWidth >= 1360 && screenWidth < 1512) ||
               (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -31,17 +31,17 @@ export const MdP = () => {
           (screenWidth >= 1360 && screenWidth < 1512) ||
           (screenWidth >= 1512 && screenWidth < 1728) ||
           screenWidth >= 1728 ||
-          (screenWidth >= 428 && screenWidth < 1360)
+          (screenWidth >= 433 && screenWidth < 1360)
             ? "overflow-hidden"
             : ""
         }`}
       >
         <div
           className={`left-0 top-0 bg-cover bg-[50%_50%] absolute ${
-            screenWidth < 428
-              ? "w-[393px]"
-              : screenWidth >= 428 && screenWidth < 1360
-              ? "w-[428px]"
+            screenWidth < 433
+              ? "w-[395px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "w-[433px]"
               : screenWidth >= 1360 && screenWidth < 1512
               ? "w-[1360px]"
               : screenWidth >= 1512 && screenWidth < 1728
@@ -50,7 +50,7 @@ export const MdP = () => {
               ? "w-[1728px]"
               : ""
           } ${
-            (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+            (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
               ? "h-[440px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -58,9 +58,9 @@ export const MdP = () => {
               ? "h-[938px]"
               : ""
           } ${
-            screenWidth < 428
+            screenWidth < 433
               ? "bg-[url(/static/img/bg.png)]"
-              : screenWidth >= 428 && screenWidth < 1360
+              : screenWidth >= 433 && screenWidth < 1360
               ? "bg-[url(/static/img/bg-1.png)]"
               : screenWidth >= 1360 && screenWidth < 1512
               ? "bg-[url(/static/img/bg-2.png)]"
@@ -73,12 +73,12 @@ export const MdP = () => {
         >
           <div
             className={`relative ${
-              screenWidth < 428 ? "w-[359px]" : screenWidth >= 428 && screenWidth < 1360 ? "w-[360px]" : ""
+              (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "w-[359px]" : ""
             } ${
-              screenWidth < 428
+              screenWidth < 433
                 ? "left-[17px]"
-                : screenWidth >= 428 && screenWidth < 1360
-                ? "left-[35px]"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "left-[39px]"
                 : screenWidth >= 1360 && screenWidth < 1512
                 ? "left-[77px]"
                 : screenWidth >= 1512 && screenWidth < 1728
@@ -105,10 +105,10 @@ export const MdP = () => {
                 ? "items-start"
                 : ""
             } ${
-              screenWidth < 428
+              screenWidth < 433
                 ? "top-[33px]"
-                : screenWidth >= 428 && screenWidth < 1360
-                ? "top-[35px]"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "top-[29px]"
                 : (screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
                   screenWidth >= 1728
@@ -120,21 +120,19 @@ export const MdP = () => {
               screenWidth >= 1728
                 ? "gap-7"
                 : ""
-            } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "h-[323px]" : ""}`}
+            } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "h-[323px]" : ""}`}
           >
             <div
               className={`${
-                screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "w-[363px]"
-                  : screenWidth >= 428 && screenWidth < 1360
-                  ? "w-[364px]"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
                     screenWidth >= 1728
                   ? "w-[1210px]"
                   : ""
-              } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "left-0" : ""} ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "top-0" : ""
+              } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "left-0" : ""} ${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "top-0" : ""
               } ${
                 (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -142,7 +140,7 @@ export const MdP = () => {
                   ? "mr-[-3.73px]"
                   : ""
               } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "h-[92px]"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -150,195 +148,7 @@ export const MdP = () => {
                   ? "h-[149px]"
                   : ""
               } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                  ? "absolute"
-                  : (screenWidth >= 1360 && screenWidth < 1512) ||
-                    (screenWidth >= 1512 && screenWidth < 1728) ||
-                    screenWidth >= 1728
-                  ? "relative"
-                  : ""
-              }`}
-            >
-              <div
-                className={`relative ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "border border-solid"
-                    : ""
-                } ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "border-[#c0b4b41a]"
-                    : ""
-                } ${
-                  screenWidth < 428
-                    ? "w-[359px]"
-                    : screenWidth >= 428 && screenWidth < 1360
-                    ? "w-[360px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "w-[1206px]"
-                    : ""
-                } ${
-                  (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                    ? "h-[92px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "h-[149px]"
-                    : ""
-                } ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "rounded-[40px]"
-                    : ""
-                } ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "[-webkit-backdrop-filter:blur(19.8px)_brightness(100%)]"
-                    : ""
-                } ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "bg-black"
-                    : ""
-                } ${
-                  (screenWidth >= 1360 && screenWidth < 1512) ||
-                  (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728 ||
-                  screenWidth < 428
-                    ? "backdrop-blur-[19.8px] backdrop-brightness-[100%]"
-                    : ""
-                }`}
-              >
-                {screenWidth >= 428 && screenWidth < 1360 && (
-                  <div className="absolute w-[359px] h-[92px] top-0 left-px bg-black rounded-[40px] border border-solid border-[#c0b4b41a] backdrop-blur-[19.8px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(19.8px)_brightness(100%)]" />
-                )}
-
-                <p
-                  className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white font-normal whitespace-nowrap leading-[normal] absolute ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                      ? "w-[359px]"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "w-[581px]"
-                      : ""
-                  } ${
-                    screenWidth >= 428 && screenWidth < 1360
-                      ? "left-0"
-                      : screenWidth < 428
-                      ? "-left-px"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "left-[312px]"
-                      : ""
-                  } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                      ? "text-[13px]"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "text-2xl"
-                      : ""
-                  } ${
-                    screenWidth >= 428 && screenWidth < 1360
-                      ? "top-[46px]"
-                      : screenWidth < 428
-                      ? "top-[45px]"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "top-[101px]"
-                      : ""
-                  } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "text-center" : ""}`}
-                >
-                  Front-End Developer , UI/UX &amp; Graphic Designer
-                </p>
-                <div
-                  className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white absolute font-semibold leading-[normal] ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                      ? "w-[359px]"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "w-[695px]"
-                      : ""
-                  } ${
-                    screenWidth < 428
-                      ? "-left-px"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "left-64"
-                      : screenWidth >= 428 && screenWidth < 1360
-                      ? "left-0"
-                      : ""
-                  } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                      ? "text-2xl"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "text-[75px]"
-                      : ""
-                  } ${
-                    screenWidth < 428
-                      ? "top-[11px]"
-                      : (screenWidth >= 1360 && screenWidth < 1512) ||
-                        (screenWidth >= 1512 && screenWidth < 1728) ||
-                        screenWidth >= 1728
-                      ? "top-2"
-                      : screenWidth >= 428 && screenWidth < 1360
-                      ? "top-3"
-                      : ""
-                  } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "text-center" : ""} ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "whitespace-nowrap" : ""
-                  }`}
-                >
-                  M-JEY L. SATURNO
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                  ? "w-[361px]"
-                  : (screenWidth >= 1360 && screenWidth < 1512) ||
-                    (screenWidth >= 1512 && screenWidth < 1728) ||
-                    screenWidth >= 1728
-                  ? "w-[1208.27px]"
-                  : ""
-              } ${screenWidth < 428 ? "left-0" : screenWidth >= 428 && screenWidth < 1360 ? "left-px" : ""} ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "top-[110px]" : ""
-              } ${
-                (screenWidth >= 1360 && screenWidth < 1512) ||
-                (screenWidth >= 1512 && screenWidth < 1728) ||
-                screenWidth >= 1728
-                  ? "mr-[-2.00px]"
-                  : ""
-              } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
-                  ? "h-[91px]"
-                  : (screenWidth >= 1360 && screenWidth < 1512) ||
-                    (screenWidth >= 1512 && screenWidth < 1728) ||
-                    screenWidth >= 1728
-                  ? "h-[249.1px]"
-                  : ""
-              } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "absolute"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -349,7 +159,7 @@ export const MdP = () => {
             >
               <div
                 className={`border border-solid border-[#c0b4b41a] rounded-[40px] [-webkit-backdrop-filter:blur(19.8px)_brightness(100%)] bg-black backdrop-blur-[19.8px] backdrop-brightness-[100%] relative ${
-                  (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                     ? "w-[359px]"
                     : (screenWidth >= 1360 && screenWidth < 1512) ||
                       (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -357,7 +167,139 @@ export const MdP = () => {
                     ? "w-[1206px]"
                     : ""
                 } ${
-                  (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                    ? "h-[92px]"
+                    : (screenWidth >= 1360 && screenWidth < 1512) ||
+                      (screenWidth >= 1512 && screenWidth < 1728) ||
+                      screenWidth >= 1728
+                    ? "h-[149px]"
+                    : ""
+                }`}
+              >
+                <p
+                  className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white absolute font-normal whitespace-nowrap leading-[normal] ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "w-[359px]"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "w-[581px]"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "-left-px"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "left-[312px]"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "text-[13px]"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "text-2xl"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "top-[45px]"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "top-[101px]"
+                      : ""
+                  } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "text-center" : ""}`}
+                >
+                  Front-End Developer , UI/UX &amp; Graphic Designer
+                </p>
+                <div
+                  className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white absolute font-semibold leading-[normal] ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "w-[359px]"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "w-[695px]"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "-left-px"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "left-64"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "text-2xl"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "text-[75px]"
+                      : ""
+                  } ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                      ? "top-[11px]"
+                      : (screenWidth >= 1360 && screenWidth < 1512) ||
+                        (screenWidth >= 1512 && screenWidth < 1728) ||
+                        screenWidth >= 1728
+                      ? "top-2"
+                      : ""
+                  } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "text-center" : ""} ${
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "whitespace-nowrap" : ""
+                  }`}
+                >
+                  M-JEY L. SATURNO
+                </div>
+              </div>
+            </div>
+            <div
+              className={`${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                  ? "w-[361px]"
+                  : (screenWidth >= 1360 && screenWidth < 1512) ||
+                    (screenWidth >= 1512 && screenWidth < 1728) ||
+                    screenWidth >= 1728
+                  ? "w-[1208.27px]"
+                  : ""
+              } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "left-0" : ""} ${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "top-[110px]" : ""
+              } ${
+                (screenWidth >= 1360 && screenWidth < 1512) ||
+                (screenWidth >= 1512 && screenWidth < 1728) ||
+                screenWidth >= 1728
+                  ? "mr-[-2.00px]"
+                  : ""
+              } ${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                  ? "h-[91px]"
+                  : (screenWidth >= 1360 && screenWidth < 1512) ||
+                    (screenWidth >= 1512 && screenWidth < 1728) ||
+                    screenWidth >= 1728
+                  ? "h-[249.1px]"
+                  : ""
+              } ${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                  ? "absolute"
+                  : (screenWidth >= 1360 && screenWidth < 1512) ||
+                    (screenWidth >= 1512 && screenWidth < 1728) ||
+                    screenWidth >= 1728
+                  ? "relative"
+                  : ""
+              }`}
+            >
+              <div
+                className={`border border-solid border-[#c0b4b41a] rounded-[40px] [-webkit-backdrop-filter:blur(19.8px)_brightness(100%)] bg-black backdrop-blur-[19.8px] backdrop-brightness-[100%] relative ${
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                    ? "w-[359px]"
+                    : (screenWidth >= 1360 && screenWidth < 1512) ||
+                      (screenWidth >= 1512 && screenWidth < 1728) ||
+                      screenWidth >= 1728
+                    ? "w-[1206px]"
+                    : ""
+                } ${
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                     ? "h-[91px]"
                     : (screenWidth >= 1360 && screenWidth < 1512) ||
                       (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -368,7 +310,7 @@ export const MdP = () => {
               >
                 <div
                   className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white absolute font-normal leading-[normal] ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "w-[359px]"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -376,7 +318,7 @@ export const MdP = () => {
                       ? "w-[133px]"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "-left-px"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -384,7 +326,7 @@ export const MdP = () => {
                       ? "left-[536px]"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "text-2xl"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -392,20 +334,20 @@ export const MdP = () => {
                       ? "text-[43px]"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "top-[3px]"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
                         screenWidth >= 1728
                       ? "-top-px"
                       : ""
-                  } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "text-center" : ""}`}
+                  } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "text-center" : ""}`}
                 >
                   SKILLS
                 </div>
                 <img
                   className={`absolute ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "w-[238px]"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -413,7 +355,7 @@ export const MdP = () => {
                       ? "w-[765px]"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "left-[60px]"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -421,7 +363,7 @@ export const MdP = () => {
                       ? "left-[220px]"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "top-[41px]"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -429,7 +371,7 @@ export const MdP = () => {
                       ? "top-20"
                       : ""
                   } ${
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "h-10"
                       : (screenWidth >= 1360 && screenWidth < 1512) ||
                         (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -439,7 +381,7 @@ export const MdP = () => {
                   }`}
                   alt="Languages"
                   src={
-                    (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                    (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                       ? "/img/languages-1.png"
                       : (screenWidth >= 1360 && screenWidth < 1512) || (screenWidth >= 1512 && screenWidth < 1728)
                       ? "/img/languages-3.png"
@@ -452,15 +394,15 @@ export const MdP = () => {
             </div>
             <div
               className={`${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "w-[361px]"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
                     screenWidth >= 1728
                   ? "w-[1208.27px]"
                   : ""
-              } ${screenWidth < 428 ? "left-0" : screenWidth >= 428 && screenWidth < 1360 ? "left-px" : ""} ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "top-[227px]" : ""
+              } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "left-0" : ""} ${
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "top-[227px]" : ""
               } ${
                 (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -468,7 +410,7 @@ export const MdP = () => {
                   ? "mr-[-2.00px]"
                   : ""
               } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "h-24"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -476,7 +418,7 @@ export const MdP = () => {
                   ? "h-[248.79px]"
                   : ""
               } ${
-                (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                   ? "absolute"
                   : (screenWidth >= 1360 && screenWidth < 1512) ||
                     (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -487,7 +429,7 @@ export const MdP = () => {
             >
               <div
                 className={`border border-solid border-[#c0b4b41a] rounded-[40px] [-webkit-backdrop-filter:blur(19.8px)_brightness(100%)] bg-black backdrop-blur-[19.8px] backdrop-brightness-[100%] relative ${
-                  (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                     ? "w-[359px]"
                     : (screenWidth >= 1360 && screenWidth < 1512) ||
                       (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -495,7 +437,7 @@ export const MdP = () => {
                     ? "w-[1206px]"
                     : ""
                 } ${
-                  (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+                  (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
                     ? "h-24"
                     : (screenWidth >= 1360 && screenWidth < 1512) ||
                       (screenWidth >= 1512 && screenWidth < 1728) ||
@@ -504,7 +446,7 @@ export const MdP = () => {
                     : ""
                 }`}
               >
-                {((screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428) && (
+                {((screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433) && (
                   <>
                     <div className="[font-family:'Poppins',Helvetica] w-[359px] -left-px tracking-[0] text-2xl top-0.5 text-white font-normal text-center whitespace-nowrap leading-[normal] absolute">
                       Tools
@@ -514,9 +456,9 @@ export const MdP = () => {
                         className="w-[39px] left-0 top-0 h-[39px] absolute"
                         alt="Ps"
                         src={
-                          screenWidth < 428
+                          screenWidth < 433
                             ? "/img/ps.svg"
-                            : screenWidth >= 428 && screenWidth < 1360
+                            : screenWidth >= 433 && screenWidth < 1360
                             ? "/img/ps-1.svg"
                             : undefined
                         }
@@ -533,9 +475,9 @@ export const MdP = () => {
                         className="w-9 left-[183px] top-px h-[39px] absolute"
                         alt="Canva"
                         src={
-                          screenWidth < 428
+                          screenWidth < 433
                             ? "/img/canva.svg"
-                            : screenWidth >= 428 && screenWidth < 1360
+                            : screenWidth >= 433 && screenWidth < 1360
                             ? "/img/canva-1.svg"
                             : undefined
                         }
@@ -584,35 +526,37 @@ export const MdP = () => {
               : screenWidth >= 1728
               ? "w-[1784px]"
               : ""
-          } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "inline-flex" : ""} ${
-            screenWidth < 428
+          } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "inline-flex" : ""} ${
+            screenWidth < 433
               ? "left-[72px]"
-              : screenWidth >= 428 && screenWidth < 1360
-              ? "left-[90px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "left-[94px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
                 screenWidth >= 1728
               ? "left-0"
               : ""
-          } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "flex-col" : ""} ${
-            (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "items-center" : ""
+          } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "flex-col" : ""} ${
+            (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "items-center" : ""
           } ${
-            (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+            screenWidth < 433
               ? "top-[455px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "top-[451px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
                 screenWidth >= 1728
               ? "top-[1650px]"
               : ""
-          } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "gap-5" : ""} ${
+          } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "gap-5" : ""} ${
             (screenWidth >= 1360 && screenWidth < 1512) ||
             (screenWidth >= 1512 && screenWidth < 1728) ||
             screenWidth >= 1728
               ? "h-[4206px]"
               : ""
-          } ${(screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428 ? "justify-center" : ""}`}
+          } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "justify-center" : ""}`}
         >
-          {((screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428) && (
+          {((screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433) && (
             <>
               <div className="[font-family:'Poppins',Helvetica] w-[238px] mt-[-1.00px] tracking-[0] text-[40px] text-black h-[71px] font-semibold leading-[normal] relative">
                 EXPERIENCE
@@ -828,20 +772,20 @@ export const MdP = () => {
         </div>
         <div
           className={`absolute ${
-            screenWidth < 428
-              ? "w-[393px]"
-              : screenWidth >= 428 && screenWidth < 1360
-              ? "w-[435px]"
+            screenWidth < 433
+              ? "w-[395px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "w-[438px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
                 screenWidth >= 1728
               ? "w-[1229px]"
               : ""
           } ${
-            screenWidth < 428
+            screenWidth < 433
               ? "left-0"
-              : screenWidth >= 428 && screenWidth < 1360
-              ? "-left-1"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "-left-0.5"
               : screenWidth >= 1360 && screenWidth < 1512
               ? "left-[65px]"
               : screenWidth >= 1512 && screenWidth < 1728
@@ -850,108 +794,27 @@ export const MdP = () => {
               ? "left-[249px]"
               : ""
           } ${
-            (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+            screenWidth < 433
               ? "top-[1460px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "top-[1456px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
                 screenWidth >= 1728
               ? "top-[994px]"
               : ""
           } ${
-            (screenWidth >= 428 && screenWidth < 1360) || screenWidth < 428
+            screenWidth < 433
               ? "h-[2160px]"
+              : screenWidth >= 433 && screenWidth < 1360
+              ? "h-[2175px]"
               : (screenWidth >= 1360 && screenWidth < 1512) ||
                 (screenWidth >= 1512 && screenWidth < 1728) ||
                 screenWidth >= 1728
               ? "h-[536px]"
               : ""
-          } ${screenWidth < 428 ? "bg-[#1e1e1e]" : ""}`}
+          } ${(screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433 ? "bg-[#1e1e1e]" : ""}`}
         >
-          {screenWidth >= 428 && screenWidth < 1360 && (
-            <div className="relative w-[439px] h-[2160px]">
-              <div className="absolute w-[430px] h-[2160px] top-0 left-0.5 bg-[#1e1e1e]" />
-              <div className="absolute w-[439px] h-[1153px] top-[7px] left-0">
-                <div className="absolute w-[370px] h-[1051px] top-0 left-[34px]">
-                  <div className="absolute w-[369px] h-[986px] top-[65px] left-px">
-                    <div className="absolute w-[209px] h-[869px] top-[118px] left-[79px]">
-                      <div className="absolute w-[147px] h-[440px] top-[429px] left-[31px]">
-                        <img
-                          className="absolute w-[147px] h-[225px] top-[215px] left-0 object-cover"
-                          alt="Logo"
-                          src="/img/logo-1-1.png"
-                        />
-                        <img
-                          className="absolute w-[147px] h-[225px] top-0 left-0 object-cover"
-                          alt="Logo with name"
-                          src="/img/logo-with-name-1-1.png"
-                        />
-                      </div>
-                      <img
-                        className="absolute w-[209px] h-[411px] top-0 left-0 object-cover"
-                        alt="Image"
-                        src="/img/image-1-1.png"
-                      />
-                    </div>
-                    <p className="absolute w-[367px] top-0 left-0 [font-family:'Poppins',Helvetica] font-normal text-white text-[11px] tracking-[0] leading-[normal]">
-                      <span className="font-medium">
-                        Icadio - A Image Captioning WIth Speech Syntesizer for visually <br />
-                        impaired people.
-                        <br />
-                      </span>
-                      <span className="[font-family:'Poppins',Helvetica] font-normal text-white text-[11px] tracking-[0]">
-                        Built with Vite + React &amp; Salesforce’s BLIP: Bootstrapping Language-Image Pre-training for
-                        Unified Vision-Language Understanding and Generation.
-                      </span>
-                    </p>
-                  </div>
-                  <div className="absolute w-[226px] top-0 left-0 [font-family:'Poppins',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal]">
-                    Works:
-                  </div>
-                </div>
-                <div className="absolute w-[435px] top-[1095px] left-0 [font-family:'Poppins',Helvetica] font-bold text-white text-[40px] text-center tracking-[0] leading-[normal]">
-                  Graphic Design Works:
-                </div>
-              </div>
-              <div className="absolute w-[356px] h-[875px] top-[1238px] left-[41px]">
-                <img
-                  className="absolute w-[170px] h-[241px] top-0 left-0 object-cover"
-                  alt="Tyreek poster"
-                  src="/img/tyreek-poster-1-1.png"
-                />
-                <img
-                  className="absolute w-[170px] h-[241px] top-0 left-[186px] object-cover"
-                  alt="Kd"
-                  src="/img/kd-2k25-1-1.png"
-                />
-                <img
-                  className="absolute w-[170px] h-[213px] top-[261px] left-0 object-cover"
-                  alt="Raiders"
-                  src="/img/raiders-1-1.png"
-                />
-                <img
-                  className="absolute w-[170px] h-[213px] top-[261px] left-[186px] object-cover"
-                  alt="Gusion rse"
-                  src="/img/gusion-rse-1-1.png"
-                />
-                <img
-                  className="absolute w-[170px] h-[170px] top-[489px] left-0 object-cover"
-                  alt="Nike kobe protro"
-                  src="/img/nike-kobe-6-protro-1-1.png"
-                />
-                <img
-                  className="absolute w-[170px] h-[170px] top-[489px] left-[186px] object-cover"
-                  alt="Anta kai artist on"
-                  src="/img/anta-kai-1-artist-on-court-1-1-1.png"
-                />
-                <img
-                  className="absolute w-[356px] h-[200px] top-[675px] left-0 object-cover"
-                  alt="Pubmat"
-                  src="/img/pubmat2-1-1.png"
-                />
-              </div>
-            </div>
-          )}
-
           {((screenWidth >= 1360 && screenWidth < 1512) ||
             (screenWidth >= 1512 && screenWidth < 1728) ||
             screenWidth >= 1728) && (
@@ -960,210 +823,301 @@ export const MdP = () => {
             </div>
           )}
 
-          {((screenWidth >= 1360 && screenWidth < 1512) ||
-            (screenWidth >= 1512 && screenWidth < 1728) ||
-            screenWidth >= 1728 ||
-            screenWidth < 428) && (
-            <>
+          <div
+            className={`absolute ${
+              (screenWidth >= 1360 && screenWidth < 1512) ||
+              (screenWidth >= 1512 && screenWidth < 1728) ||
+              screenWidth >= 1728 ||
+              (screenWidth >= 433 && screenWidth < 1360)
+                ? "w-[398px]"
+                : screenWidth < 433
+                ? "w-[397px]"
+                : ""
+            } ${
+              (screenWidth >= 1360 && screenWidth < 1512) ||
+              (screenWidth >= 1512 && screenWidth < 1728) ||
+              screenWidth >= 1728
+                ? "left-0"
+                : screenWidth < 433
+                ? "left-0.5"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "left-[15px]"
+                : ""
+            } ${
+              (screenWidth >= 1360 && screenWidth < 1512) ||
+              (screenWidth >= 1512 && screenWidth < 1728) ||
+              screenWidth >= 1728
+                ? "top-[115px]"
+                : screenWidth < 433
+                ? "top-3.5"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "top-[15px]"
+                : ""
+            } ${
+              (screenWidth >= 1360 && screenWidth < 1512) ||
+              (screenWidth >= 1512 && screenWidth < 1728) ||
+              screenWidth >= 1728
+                ? "h-[421px]"
+                : screenWidth < 433
+                ? "h-[1124px]"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "h-[1121px]"
+                : ""
+            }`}
+          >
+            <div
+              className={`relative ${
+                (screenWidth >= 1360 && screenWidth < 1512) ||
+                (screenWidth >= 1512 && screenWidth < 1728) ||
+                screenWidth >= 1728
+                  ? "w-[396px]"
+                  : (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                  ? "w-[395px]"
+                  : ""
+              } ${
+                (screenWidth >= 1360 && screenWidth < 1512) ||
+                (screenWidth >= 1512 && screenWidth < 1728) ||
+                screenWidth >= 1728
+                  ? "h-[421px]"
+                  : screenWidth < 433
+                  ? "h-[1124px]"
+                  : screenWidth >= 433 && screenWidth < 1360
+                  ? "h-[1121px]"
+                  : ""
+              }`}
+            >
+              {((screenWidth >= 1360 && screenWidth < 1512) ||
+                (screenWidth >= 1512 && screenWidth < 1728) ||
+                screenWidth >= 1728) && (
+                <>
+                  <div className="w-[396px] left-0 top-0.5 h-[419px] rounded-[50px] bg-black absolute" />
+                  <img
+                    className="w-[145px] left-[126px] top-0 h-[150px] absolute"
+                    alt="Frame"
+                    src={
+                      (screenWidth >= 1360 && screenWidth < 1512) || (screenWidth >= 1512 && screenWidth < 1728)
+                        ? "/img/frame-3.svg"
+                        : screenWidth >= 1728
+                        ? "/img/frame-4.svg"
+                        : undefined
+                    }
+                  />
+                </>
+              )}
+
+              {((screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433) && (
+                <>
+                  <div
+                    className={`w-[395px] left-0 h-[999px] absolute ${
+                      screenWidth < 433 ? "top-[67px]" : screenWidth >= 433 && screenWidth < 1360 ? "top-16" : ""
+                    }`}
+                  >
+                    <div className="w-[212px] left-[90px] top-[92px] h-[907px] absolute">
+                      <div className="w-[149px] left-[31px] top-[448px] h-[459px] absolute">
+                        <img
+                          className="w-[149px] left-0 top-[225px] object-cover h-[235px] absolute"
+                          alt="Logo"
+                          src="/img/logo-1-1.png"
+                        />
+                        <img
+                          className="w-[149px] left-0 top-0 object-cover h-[235px] absolute"
+                          alt="Logo with name"
+                          src="/img/logo-with-name-1-1.png"
+                        />
+                      </div>
+                      <img
+                        className="w-[212px] left-0 top-0 object-cover h-[429px] absolute"
+                        alt="Image"
+                        src="/img/image-1-1.png"
+                      />
+                    </div>
+                    <p className="[font-family:'Poppins',Helvetica] w-[393px] left-0 tracking-[0] text-[11px] top-0 text-white font-normal text-center leading-[normal] absolute">
+                      <span className="font-medium">
+                        Icadio - A Image Captioning WIth Speech Syntesizer for visually impaired people.
+                        <br />
+                      </span>
+                      <span className="[font-family:'Poppins',Helvetica] tracking-[0] text-[11px] text-white font-normal">
+                        Built with Vite + React &amp; Salesforce’s BLIP: Bootstrapping Language-Image Pre-training for
+                        Unified Vision-Language Understanding and Generation.
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    className={`[font-family:'Poppins',Helvetica] w-[204px] tracking-[0] text-5xl top-0 text-white font-bold leading-[normal] absolute ${
+                      screenWidth < 433 ? "left-[31px]" : screenWidth >= 433 && screenWidth < 1360 ? "left-[19px]" : ""
+                    }`}
+                  >
+                    Works:
+                  </div>
+                </>
+              )}
+
               <div
-                className={`left-0 absolute ${
+                className={`[font-family:'Poppins',Helvetica] tracking-[0] text-white text-center leading-[normal] absolute ${
                   (screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
                   screenWidth >= 1728
-                    ? "w-[398px]"
-                    : screenWidth < 428
-                    ? "w-[397px]"
+                    ? "w-[396px]"
+                    : (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                    ? "w-[393px]"
+                    : ""
+                } ${
+                  (screenWidth >= 1360 && screenWidth < 1512) ||
+                  (screenWidth >= 1512 && screenWidth < 1728) ||
+                  screenWidth >= 1728 ||
+                  screenWidth < 433
+                    ? "left-0"
+                    : screenWidth >= 433 && screenWidth < 1360
+                    ? "left-px"
                     : ""
                 } ${
                   (screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
                   screenWidth >= 1728
-                    ? "top-[115px]"
-                    : screenWidth < 428
-                    ? "top-3.5"
+                    ? "text-[25px]"
+                    : (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                    ? "text-[40px]"
                     : ""
                 } ${
                   (screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
                   screenWidth >= 1728
-                    ? "h-[421px]"
-                    : screenWidth < 428
-                    ? "h-[1124px]"
+                    ? "top-[150px]"
+                    : screenWidth < 433
+                    ? "top-[1066px]"
+                    : screenWidth >= 433 && screenWidth < 1360
+                    ? "top-[1063px]"
+                    : ""
+                } ${
+                  (screenWidth >= 1360 && screenWidth < 1512) ||
+                  (screenWidth >= 1512 && screenWidth < 1728) ||
+                  screenWidth >= 1728
+                    ? "font-normal"
+                    : (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                    ? "font-bold"
                     : ""
                 }`}
               >
                 {((screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
                   screenWidth >= 1728) && (
-                  <div className="w-[396px] h-[421px] relative">
-                    <div className="w-[396px] left-0 top-0.5 h-[419px] rounded-[50px] bg-black absolute" />
-                    <img
-                      className="w-[145px] left-[126px] top-0 h-[150px] absolute"
-                      alt="Frame"
-                      src={
-                        (screenWidth >= 1360 && screenWidth < 1512) || (screenWidth >= 1512 && screenWidth < 1728)
-                          ? "/img/frame-3.svg"
-                          : screenWidth >= 1728
-                          ? "/img/frame-4.svg"
-                          : undefined
-                      }
-                    />
-                    <p className="[font-family:'Poppins',Helvetica] w-[396px] left-0 tracking-[0] text-[25px] top-[150px] text-white absolute font-normal text-center leading-[normal]">
+                  <>
+                    <p>
                       <span className="font-semibold">
                         {" "}
                         Freelance Graphic Designer <br />
                       </span>
+                    </p>
+                    <p>
                       <span className="font-light">
                         Cabuyao City, Laguna <br />
                         March 2021 - 2022
                       </span>
                     </p>
-                  </div>
-                )}
-
-                {screenWidth < 428 && (
-                  <>
-                    <div className="absolute w-[334px] h-[1051px] top-0 left-[31px]">
-                      <div className="absolute w-[333px] h-[986px] top-[65px] left-px">
-                        <div className="absolute w-[189px] h-[869px] top-[118px] left-[72px]">
-                          <div className="absolute w-[133px] h-[440px] top-[429px] left-7">
-                            <img
-                              className="absolute w-[133px] h-[225px] top-[215px] left-0 object-cover"
-                              alt="Logo"
-                              src="/img/logo-1.png"
-                            />
-                            <img
-                              className="absolute w-[133px] h-[225px] top-0 left-0 object-cover"
-                              alt="Logo with name"
-                              src="/img/logo-with-name-1.png"
-                            />
-                          </div>
-                          <img
-                            className="absolute w-[189px] h-[411px] top-0 left-0 object-cover"
-                            alt="Image"
-                            src="/img/image-1.png"
-                          />
-                        </div>
-                        <p className="absolute w-[331px] top-0 left-0 [font-family:'Poppins',Helvetica] font-normal text-white text-[11px] tracking-[0] leading-[normal]">
-                          <span className="font-medium">
-                            Icadio - A Image Captioning WIth Speech Syntesizer for visually <br />
-                            impaired people.
-                            <br />
-                          </span>
-                          <span className="[font-family:'Poppins',Helvetica] font-normal text-white text-[11px] tracking-[0]">
-                            Built with Vite + React &amp; Salesforce’s BLIP: Bootstrapping Language-Image Pre-training
-                            for Unified Vision-Language Understanding and Generation.
-                          </span>
-                        </p>
-                      </div>
-                      <div className="w-[204px] top-0 [font-family:'Poppins',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal] absolute left-0">
-                        Works:
-                      </div>
-                    </div>
-                    <div className="absolute w-[393px] top-[1066px] left-0 [font-family:'Poppins',Helvetica] font-bold text-white text-[40px] text-center tracking-[0] leading-[normal]">
-                      Graphic Design Works:
-                    </div>
                   </>
                 )}
+
+                {((screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433) && <>Graphic Design Works:</>}
               </div>
-              <div
-                className={`absolute ${
-                  screenWidth < 428
-                    ? "w-[298px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "w-[400px]"
-                    : ""
-                } ${
-                  screenWidth < 428
-                    ? "left-[49px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "left-[416px]"
-                    : ""
-                } ${
-                  screenWidth < 428
-                    ? "top-[1236px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "top-[115px]"
-                    : ""
-                } ${
-                  screenWidth < 428
-                    ? "h-[804px]"
-                    : (screenWidth >= 1360 && screenWidth < 1512) ||
-                      (screenWidth >= 1512 && screenWidth < 1728) ||
-                      screenWidth >= 1728
-                    ? "h-[419px]"
-                    : ""
-                }`}
-              >
-                {screenWidth < 428 && (
-                  <>
-                    <img
-                      className="absolute w-[142px] h-[221px] top-0 left-0 object-cover"
-                      alt="Tyreek poster"
-                      src="/img/tyreek-poster-1.png"
-                    />
-                    <img
-                      className="absolute w-[142px] h-[221px] top-0 left-[155px] object-cover"
-                      alt="Kd"
-                      src="/img/kd-2k25-1.png"
-                    />
-                    <img
-                      className="absolute w-[142px] h-[196px] top-60 left-0 object-cover"
-                      alt="Raiders"
-                      src="/img/raiders-1.png"
-                    />
-                    <img
-                      className="absolute w-[142px] h-[196px] top-60 left-[155px] object-cover"
-                      alt="Gusion rse"
-                      src="/img/gusion-rse-1.png"
-                    />
-                    <img
-                      className="absolute w-[142px] h-[156px] top-[449px] left-0 object-cover"
-                      alt="Nike kobe protro"
-                      src="/img/nike-kobe-6-protro-1.png"
-                    />
-                    <img
-                      className="absolute w-[142px] h-[156px] top-[449px] left-[155px] object-cover"
-                      alt="Anta kai artist on"
-                      src="/img/anta-kai-1-artist-on-court-1-1.png"
-                    />
-                    <img
-                      className="absolute w-[298px] h-[184px] top-[620px] left-0 object-cover"
-                      alt="Pubmat"
-                      src="/img/pubmat2-1.png"
-                    />
-                  </>
-                )}
-
-                {((screenWidth >= 1360 && screenWidth < 1512) ||
+            </div>
+          </div>
+          <div
+            className={`absolute ${
+              (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                ? "w-[345px]"
+                : (screenWidth >= 1360 && screenWidth < 1512) ||
                   (screenWidth >= 1512 && screenWidth < 1728) ||
-                  screenWidth >= 1728) && (
-                  <div className="w-[396px] h-[419px] rounded-[50px] bg-black relative">
-                    <p className="[font-family:'Poppins',Helvetica] w-[394px] left-0.5 tracking-[0] text-[25px] top-[148px] text-white absolute font-normal text-center leading-[normal]">
-                      <span className="font-semibold">
-                        {" "}
-                        Part-Time Layout Designer &amp; Graphic Designer <br />
-                      </span>
-                      <span className="font-light">
-                        Cabuyao City, Laguna <br />
-                        Dec 2022 - Aug 2023
-                      </span>
-                    </p>
-                    <div className="[font-family:'Poppins',Helvetica] w-[394px] left-0.5 tracking-[0] text-5xl top-[41px] text-white absolute font-extrabold text-center leading-[normal]">
-                      EZ Press
-                    </div>
-                  </div>
-                )}
-              </div>
-            </>
-          )}
+                  screenWidth >= 1728
+                ? "w-[400px]"
+                : ""
+            } ${
+              screenWidth < 433
+                ? "left-[26px]"
+                : screenWidth >= 433 && screenWidth < 1360
+                ? "left-[47px]"
+                : (screenWidth >= 1360 && screenWidth < 1512) ||
+                  (screenWidth >= 1512 && screenWidth < 1728) ||
+                  screenWidth >= 1728
+                ? "left-[416px]"
+                : ""
+            } ${
+              (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                ? "top-[1236px]"
+                : (screenWidth >= 1360 && screenWidth < 1512) ||
+                  (screenWidth >= 1512 && screenWidth < 1728) ||
+                  screenWidth >= 1728
+                ? "top-[115px]"
+                : ""
+            } ${
+              (screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433
+                ? "h-[804px]"
+                : (screenWidth >= 1360 && screenWidth < 1512) ||
+                  (screenWidth >= 1512 && screenWidth < 1728) ||
+                  screenWidth >= 1728
+                ? "h-[419px]"
+                : ""
+            }`}
+          >
+            {((screenWidth >= 433 && screenWidth < 1360) || screenWidth < 433) && (
+              <>
+                <img
+                  className="w-[165px] left-0 top-0 object-cover h-[221px] absolute"
+                  alt="Tyreek poster"
+                  src="/img/tyreek-poster-1-1.png"
+                />
+                <img
+                  className="w-[165px] left-[180px] top-0 object-cover h-[221px] absolute"
+                  alt="Kd"
+                  src="/img/kd-2k25-1-1.png"
+                />
+                <img
+                  className="w-[165px] left-0 top-60 object-cover h-[196px] absolute"
+                  alt="Raiders"
+                  src="/img/raiders-1-1.png"
+                />
+                <img
+                  className="w-[165px] left-[180px] top-60 object-cover h-[196px] absolute"
+                  alt="Gusion rse"
+                  src="/img/gusion-rse-1-1.png"
+                />
+                <img
+                  className="w-[165px] left-0 top-[449px] object-cover h-[156px] absolute"
+                  alt="Nike kobe protro"
+                  src="/img/nike-kobe-6-protro-1-1.png"
+                />
+                <img
+                  className="w-[165px] left-[180px] top-[449px] object-cover h-[156px] absolute"
+                  alt="Anta kai artist on"
+                  src="/img/anta-kai-1-artist-on-court-1-1-1.png"
+                />
+                <img
+                  className="w-[345px] left-0 top-[620px] object-cover h-[184px] absolute"
+                  alt="Pubmat"
+                  src="/img/pubmat2-1-1.png"
+                />
+              </>
+            )}
 
+            {((screenWidth >= 1360 && screenWidth < 1512) ||
+              (screenWidth >= 1512 && screenWidth < 1728) ||
+              screenWidth >= 1728) && (
+              <div className="w-[396px] h-[419px] rounded-[50px] bg-black relative">
+                <p className="[font-family:'Poppins',Helvetica] w-[394px] left-0.5 tracking-[0] text-[25px] top-[148px] text-white absolute font-normal text-center leading-[normal]">
+                  <span className="font-semibold">
+                    {" "}
+                    Part-Time Layout Designer &amp; Graphic Designer <br />
+                  </span>
+                  <span className="font-light">
+                    Cabuyao City, Laguna <br />
+                    Dec 2022 - Aug 2023
+                  </span>
+                </p>
+                <div className="[font-family:'Poppins',Helvetica] w-[394px] left-0.5 tracking-[0] text-5xl top-[41px] text-white absolute font-extrabold text-center leading-[normal]">
+                  EZ Press
+                </div>
+              </div>
+            )}
+          </div>
           {((screenWidth >= 1360 && screenWidth < 1512) ||
             (screenWidth >= 1512 && screenWidth < 1728) ||
             screenWidth >= 1728) && (
