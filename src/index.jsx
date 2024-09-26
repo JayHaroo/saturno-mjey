@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOMClient from "react-dom/client";
-import { Sm } from "./screens/Sm";
+import { MdP } from "./screens/MdP";
 
 const app = document.getElementById("app");
 const root = ReactDOMClient.createRoot(app);
-root.render(<Sm />);
+root.render(<MdP />);
